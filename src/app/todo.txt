@@ -1,0 +1,20 @@
+to-do file for term project - 
+
+Todo:
+
+Done:
+- Display AQ details in google map marker.
+- Don't load map if lat/long not set
+- show nearby stations on map.
+- Keep recently used or added entries in station list.
+- Make sure displatyed station info always matches background map.
+- re-popuklate stations if map changhes (zoom, pan)
+- aqLookupArea() should send requests for marker station data
+- Markers to by updated with location and AQ when we get data
+- send center station info from map back to controls
+- Choose and integrate chart library.
+- Past & future bar charts.
+- Save recently station list entries to local sorage, do auto-fill with them.
+- Get rid of MAP/Satellite blob on map
+- Fix station list on firefox
+

@@ -1,0 +1,52 @@
+<div class="menuarea" >
+      
+  <div class="controls">
+    <div class="control_title" >{{ title }}</div>
+    <div class="location_input"  title="Enter a City or Lat/Longitude" >
+      <label>City: </label>
+      <input  [(ngModel)]="currentCity" (keydown.enter)="aqLookupCity();" >
+    </div>
+    <div class="location_button" >
+      <button Id="cityButton" (click)="aqLookupCity();" 
+            title="Find pollution monitor stations near this city" >
+        Get City Stations 
+      </button>
+    </div>
+    <div class="latlong_section" >
+        <div class="latlong_item" >
+           <label>Geolocation:</label>
+        </div>
+        <div class="latlong_item"  title="Enter latitude" >
+          <label>Latitude:</label>
+          <input class="data" [(ngModel)]="latitude" > 
+        </div>
+        <div class="latlong_item" title="Enter longitude" >
+            <label>Longitude:</label>  
+            <input class="data" [(ngModel)]="longitude" > 
+        </div>
+        <div class="latlong_button" >
+          <button Id="locationButton" (click)="aqLookupCoords();" >
+             Search by Co-ords
+          </button>
+        </div>
+        <div class="monitors_list" >
+          <div>
+             &nbsp; Or try these Stations
+             <button Id="clearMonList" (click)="clearDisplayMonitors();" >
+               Clear list
+             </button>
+          </div>
+          <div class="innerList" >
+            <table class="monitor_table" >
+              <tr *ngFor="let monitor of displayMonitors" >
+               <td  class="display1m" (click)="monitorClick( monitor )" >
+                {{monitor}}
+               </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+

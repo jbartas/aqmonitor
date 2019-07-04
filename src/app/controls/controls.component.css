@@ -1,0 +1,120 @@
+.controls {
+    position:relative;    
+    width:90%; 
+    top:10px;
+    left:0px; 
+    padding:        5px;
+}
+
+.location_input {
+    position:   relative;
+    top:        5px;
+    width:      100%;
+    height:     40px;
+    display:    flex;
+    margin:     2px;
+    padding:    4px;
+}
+  
+.location_button {
+    position:   relative;
+    top:        0px;
+    left:       25%;
+    width:      70%;
+    height:     2em;
+}
+
+.control_title {
+    text-align:     center;
+    background-color: #E8E8FF;
+    border:         1px solid #8888EE;
+    position:       relative;
+    left:           4px;
+    top:            0%;
+    border-radius:  5px;
+    padding:        5px;
+    box-shadow:     1px 1px  #8888EE;
+}
+
+.latlong_section {
+    position:       relative;
+    left:           1%;
+    display:        flex;
+    flex-direction: column;
+}
+
+.latlong_item {
+    position:       relative;
+    top:            1.5em;
+    left:           1%;
+    width:          96%;
+    display:        flex;
+
+    margin:         1%;
+    padding:        1%;
+}
+
+.latlong_button {
+    position:       relative;
+    top:            1.8em;
+    left:           24%;
+}
+
+.data {
+    position:       absolute;
+    top:            0.5em;
+    left:           36%;
+    width:          63%;
+
+    height:         1.1em;
+    margin:         1px;
+    font-size:      0.8em;
+}
+
+.monitors_list {
+    position:       relative;
+    top:            3em;
+    left:           2%;
+}
+
+.innerList {
+    position:       relative;
+    top:            0.5em;
+    left:           2%;
+    width:          97%;
+    border:         1px solid #8888EE;
+    border-radius:  5px;
+    padding:        2px;
+    background-color: #FFFFFF;
+
+    overflow-y:     auto;
+    max-height:     260px;
+
+}
+
+.monitor_table {
+    position:       relative;
+    top:            0em;
+    left:           0em;
+    width:          100%;
+}
+
+table tr:nth-child(odd) {
+    background-color: #E8F0E8;
+}
+
+.display1m {
+    position:       relative;
+    top:            0em;
+    left:           0em;
+    width:          100%;
+
+    font-size:      0.8em;
+    border-bottom:  1px solid #8888EE;
+    padding:        4px;
+}
+
+.display1m:hover {
+    background-color: #FFFFCC;
+}
+

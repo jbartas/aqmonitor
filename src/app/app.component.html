@@ -1,0 +1,36 @@
+
+<!-- include the sections of the main screen - controls on upperleft, map 
+   on right, and charts at bottom. Locations are controlled in the 
+   root styles.css file. 
+  -->
+
+<main>
+
+  <app-controls  
+    (locationChange) = "onLocationChange($event)" 
+    [latitude] = "mapLatitude" 
+    [longitude] = "mapLongitude"
+    [currentCity] = "mapStation"
+  >
+  </app-controls>
+
+  <app-maparea 
+    (locationChange) = "onMapStationChange($event)" 
+    [latitude] = "newLatitude" 
+    [longitude] = "newLongitude"
+    >
+  </app-maparea>
+
+  <!-- Charts need to catch all location chages -->
+  <app-charts    
+    (locationChange) = "onLocationChange($event)" 
+    [latitude] = "mapLatitude" 
+    [longitude] = "mapLongitude"  
+    (locationChange) = "onMapStationChange($event)" 
+    [latitude] = "newLatitude" 
+    [longitude] = "newLongitude"
+  >
+
+  </app-charts>
+
+</main>
