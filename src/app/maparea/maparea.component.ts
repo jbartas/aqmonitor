@@ -22,6 +22,7 @@ export class MapareaComponent implements OnInit, OnChanges {
   loadingMap: string = "Loading map...";
   timer: any;
   zoomTimer: any;   // timer for debouncing zoom refresh
+  statusMsg: string;
 
   // Latitude, longitude, and station name at center of map
   @Input()
